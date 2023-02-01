@@ -1,0 +1,27 @@
+#include <iostream>
+#include <string>
+
+int main() 
+{
+    std::string name;
+    
+    std::cout << "What's your name? \n";
+    std::getline (std::cin, name);
+    
+    std::cout << "Welcome, " << name << "!\n";
+    std::cout << "Are you ready to become a Sugar Daddy? \n";
+    
+    std::string answer;
+    std::getline (std::cin, answer);
+    
+    if (answer == "Yes" || answer == "yes") 
+    {
+        std::cout << "Excellent! Let's get started. \n";
+    } 
+    else 
+    {
+        std::cout << "No problem. Come back when you're ready. \n";
+    }
+    
+    return 0;
+}
